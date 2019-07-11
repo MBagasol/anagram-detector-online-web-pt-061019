@@ -6,7 +6,7 @@ class Anagram
     @name = name
   end
   
-  def match(array)
-    array.select {|x| x.split("").sort == @name.split("").sort}
+  def match(anagram)
+    anagram.select {|x| x.split("").sort == @name.split("").sort}
   end 
 end
